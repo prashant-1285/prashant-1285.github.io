@@ -1,3 +1,0 @@
-# Computer vision
-
-# Work Experience
