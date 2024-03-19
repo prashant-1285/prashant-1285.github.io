@@ -313,11 +313,11 @@ h6 {
 
 /*--------------------------------------------------------------
 # Hero Section
---------------------------------------------------------------*/
+-------------------------------------------------------------- where there is main picture*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  background: url("../img/nepal_mountain.jpg") top right;
   background-size: cover;
   position: relative;
 }
