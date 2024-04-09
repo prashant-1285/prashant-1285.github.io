@@ -604,12 +604,10 @@ section {
 .about .image {
   background: url("../img/me.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  max-height: 800px;
 }
 
-.about .skills-content {
-  margin-top: 30px;
-}
+
 
 .about .skills-content .progress {
   height: 60px;
@@ -643,11 +641,26 @@ section {
   transition: 0.9s;
   background-color: #ffb727;
 }
+/* Add space between paragraphs in the main "About Me" section */
+.about .about-me-content p {
+  margin-bottom: 20px; /* Adjust as needed */
+}
 
+
+
+.about .profile-content-wrap {
+  display: flex;
+}
+
+.about .profile-content-wrap .image {
+  flex: 0 0 auto;
+  width: auto; /* Adjust as needed */
+  margin-right: 30px; /* Adjust as needed */
+}
 /*--------------------------------------------------------------
-# My Resume
+# My workexperience
 --------------------------------------------------------------*/
-.resume .resume-title {
+.workexperience .workexperience-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -655,14 +668,14 @@ section {
   color: #3b434a;
 }
 
-.resume .resume-item {
+.workexperience .workexperience-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #82909c;
   position: relative;
 }
 
-.resume .resume-item h4 {
+.workexperience .workexperience-item h4 {
   line-height: 18px;
   font-size: 16px;
   font-weight: 700;
@@ -671,7 +684,7 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.workexperience .workexperience-item h5 {
   font-size: 16px;
   background: #eef0f2;
   padding: 5px 15px;
@@ -680,19 +693,83 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
+.workexperience .workexperience-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
+.workexperience .workexperience-item ul li {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
+.workexperience .workexperience-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.workexperience .workexperience-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #82909c;
+}
+
+
+/*--------------------------------------------------------------
+# My Education
+--------------------------------------------------------------*/
+/* Increase horizontal capacity */
+
+
+.education .education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #3b434a;
+}
+
+.education .education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #82909c;
+  position: relative;
+}
+
+.education .education-item h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffb727;
+  margin-bottom: 10px;
+}
+
+.education .education-item h5 {
+  font-size: 16px;
+  background: #eef0f2;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education .education-item ul {
+  padding-left: 20px;
+}
+
+.education .education-item ul li {
+  padding-bottom: 10px;
+}
+
+.education .education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education .education-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1287,7 +1364,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/foot_image.jpg") top center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
